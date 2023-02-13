@@ -1,0 +1,465 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans JP', '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 36px;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #FFFFFb;
+    background-color: #211E55;
+}
+
+a {
+    color: #FFFFFb;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+/* Header */
+.header {
+    display: flex;
+}
+
+.sp-nav {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    background-color: #071e3d;
+    opacity: .9;
+}
+
+.sp-nav-list {
+    width: 80%;
+    padding: 0 10%;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2rem;
+    text-align: left;
+    list-style: none;
+}
+
+.sp-nav-list li {
+    margin-bottom: 1rem;
+}
+
+.header-main-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    background-image: url("./images/main.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 14px;
+    font-size: 20px;
+    line-height: 0;
+    color:#FFFFFB;
+    text-align: left;
+    border-radius: 50%;
+    background-color: #211E55;
+}
+
+.nav-button {
+    top: 15px;
+    right: 15px;
+}
+
+.catch {
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: left;
+    color:#fffffb;
+}
+
+.mainlogo {
+    display: block;
+    padding: 14px;
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 0;
+    text-align: center;
+    color: #FFFFFb;
+}
+.horizon-line {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    width: 1px;
+    height: calc(20% - 50px);
+    background-color: #211E55;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFB;
+}
+
+/* Contents共通 */
+main {
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section .container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+section h2 {
+    width: 100%;
+    text-align: center;
+    font-family: serif;
+    font-size: 24px;
+    letter-spacing: 0.3rem;
+    color: #fff;
+}
+
+.carousel div img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section {
+    padding-left: 25px;
+    margin-top: 10px;
+    
+}
+
+section p {
+    font-size: 16px;
+    font-family: serif;
+    margin-left: 20px;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots li button:before {
+    width: 25px;
+    height: 25px;
+    color: #a8a698;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 25px;
+    height: 25px;
+    color: #555555;
+    opacity: 1;
+}
+
+.button-konyu {
+    position: relative;
+    display: block;
+    width: 180px;
+    padding: 20px 5%;
+    margin: 40px auto;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px #ffffff solid;
+    background: #0e3466;
+    transition: .3s;
+    text-align: center;
+}
+
+/* Contents concept */
+.concept-box {
+    width: 100%;
+}
+
+.concept-box img {
+    width: 100%;
+}
+
+/* item共通 */
+section {
+    padding: 20px 0;
+}
+
+section .container {
+    width: 100%;
+    margin: 0;
+}
+
+section h2 {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.3rem;
+    color: #fffffb;
+    font-weight: bold;
+}
+
+img {
+    max-width: 95%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+
+.carousel div img {
+    width: 100%;
+    margin: auto;
+}
+
+section p {
+    font-size: 16px;
+}
+
+/* 複数箇所で使いまわす指定 */
+h2 {
+    font-size: 4.8rem;
+    font-weight: 300;
+    color: #211E55;
+    letter-spacing: 0.5rem;
+}
+ 
+/* summary */
+.summary-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-size: 45px;
+    line-height: 3rem;
+}
+
+.text {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: normal;
+    color: #fffffb;
+    margin: 20px 0 40px 0px;
+}
+
+.container { 
+    margin: 10px 0;
+}
+
+.button-konyu {
+    border-radius: 10px;
+    margin: 0 auto;   
+}
+/* Footer */
+footer {
+    padding: 30px 0;
+    background: #01060d;
+    text-align: center;
+}
+
+footer .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.1em
+}
+
+footer .contact {
+    padding: 0;
+    margin: 30px 0 30px 0;
+}
+
+footer .contact li {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+footer .contact li:last-child {
+    margin-right: 0;
+}
+
+footer .contact a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 0 15px 0 0;
+    font-size: 27px;
+    line-height: 0rem;
+    color: #fffffb;
+    text-align: center;
+    background-color: #071e3d;
+    border-radius: 50%;
+}
+
+footer .contact .cart a {
+    font-size: 20px;
+    line-height: 3rem;
+}
+
+footer .footer-link {
+    font-size: 20px;
+    letter-spacing: 00.02em;
+}
+
+footer small {
+    letter-spacing: 0.02em;
+    font-size: 20px;
+}
+
+/* PC表示 670px以上 */
+@media (min-width: 670px) {
+    .mainlogo {
+        font-size: 34px;
+    }
+
+    .nav-button:hover,
+    .cart-button:hover {
+        cursor: pointer;
+        background-color: #1c5095;
+    }
+
+    section .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .items-box {
+    width: 32%;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: -12px 10px 12px rgba(0, 0, 0, 0.25);
+    }
+    
+    .container {
+        display: flex;
+    }
+
+    #items1 {
+        width: 33%;
+    }
+
+    #items2 {
+        width: 33%;
+    }
+
+    #items3 {
+        width: 33%;
+    }
+    
+    .nopc {
+        display: none;
+    }
+
+    .sp-nav-list {
+        padding: 0 20%;
+        font-size: 3.4rem;
+        line-height: 7rem;
+        width: 60%;
+        text-align: left;
+    }
+
+    .catch {
+        font-size: 32px;
+        letter-spacing: 3px;
+        top: 34%;
+    }
+
+    .summary {
+        text-align: center;
+    }
+    
+    .summary-title {
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .text span {
+        font-size: 16px;
+        display: inline-block;
+    }
+    
+    footer .contact a:hover {
+        background-color: #1c5095;
+    }
+
+    .container {
+        width: 100%
+    }
+}
+/*スマホ用 480px以上*/
+@media screen and (max-width: 480px) {
+
+
+    .summary-title {
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .text {
+        width:100%;
+        font-size: 16px;
+        margin: 0;
+        display: inline-block;
+        line-height: 1.6;
+        letter-spacing: .1em;
+    }
+
+    .button-konyu {
+        margin-top: 40px;
+    }    
+
+    footer .footer-link {
+        font-size: 16px;
+    }
+
+    footer small {
+        font-size: 16px;
+    }
+}
